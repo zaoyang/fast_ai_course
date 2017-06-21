@@ -34,7 +34,7 @@ def VGG16_Avg(include_top=True, weights='imagenet',
     input_shape = _obtain_input_shape(input_shape,
                                       default_size=224,
                                       min_size=48,
-                                      dim_ordering=K.image_dim_ordering(),
+                                      data_format=K.image_data_format(),
                                       include_top=include_top)
 
     if input_tensor is None:
