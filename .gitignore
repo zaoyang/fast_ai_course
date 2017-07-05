@@ -7,6 +7,8 @@
 .idea/workspace.xml
 .idea/tasks.xml
 data/
+.ipynb_checkpoints/
+redone/.ipynb_checkpoints/
 
 # Sensitive or high-churn files:
 .idea/dataSources/
