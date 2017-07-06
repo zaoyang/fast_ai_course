@@ -9,6 +9,7 @@
 data/
 .ipynb_checkpoints/
 redone/.ipynb_checkpoints/
+orig/.ipynb_checkpoints/
 
 # Sensitive or high-churn files:
 .idea/dataSources/
