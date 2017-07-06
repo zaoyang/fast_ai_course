@@ -167,6 +167,13 @@ def mk_square(img):
     return arr
 
 
+def limit_mem():
+    K.get_session().close()
+    cfg = K.tf.ConfigProto()
+    cfg.gpu_options.allow_growth = True
+    K.set_session(K.tf.Session(config=cfg))
+
+
 def vgg_ft(out_dim):
     vgg = Vgg16()
     vgg.ft(out_dim)
